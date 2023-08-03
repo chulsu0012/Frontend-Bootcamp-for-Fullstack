@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color: #3f464d;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif"
+}
+
+a {
+    all: unset;
+}
+
+a:link {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:active {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.head-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-container .head-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head-container .head-brand a:hover {
+    color: #2186c4;
+    cursor: pointer;
+}
+
+.head-container .head-blog {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head-container .head-blog a:hover {
+    color: #2186c4;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.main {
+    height: 360px;
+    background-image: url("https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 48, 89);
+    opacity: 0.7;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.news {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff6ae;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.skill {
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+    transition: 0.4s;
+}
+
+.skill:hover {
+    transform: translate(0, -5px);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #545e6f;
+    margin-bottom: 0.2rem;
+}
+
+.skill-usage {
+    font-size: 0.9rem;
+    color: #545e6f;
+}
+
+.star-style {
+    color: #B799FF;
+}
+
+.apple-style {
+    color: #ACBCFF;
+}
+
+.book-style {
+    color: #AEE2FF;
+}
+
+.pen-style {
+    color: #91C8E4;
+}
+
+.roadmap-container {
+    width:100%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.roadmap-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roadmap-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #545e54;
+}
+
+.slide-prev {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(47, 48, 89);
+}
+
+.slide-next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+}
+
+.slide-prev-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+}
+
+.slide-next-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+}
+
+.arrow-container {
+    display: flex;
+}
+
+.class-list {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: none; /* overflow를 hidden으로 설정하면 transform 시 이미지가 잘린다. */
+}
+
+.class-card {
+    width: 240px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+
+.class-card:hover {
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, .2);
+    transform: translate(0, -5px);
+}
+
+.class-image {
+    width: 240px;
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+    object-fit: cover;
+}
+
+.class-container {
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-type {
+    font-size: 0.9rem;
+    color: #949393;
+}
+
+.class-format {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #0547a1;
+    padding: 0.2rem;
+}
+
+.class-desc {
+    width: 100%;
+    margin-top: 1rem;
+    color: #545e6f;
+}
+
+.class-desc:hover {
+    color: #2186c4;
+}
+
+.class-title {
+    font-weight: bold;
+    color: inherit;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+
+.class-detail {
+    font-size: 0.9rem;
+    color: inherit;
+    line-height: 1.5rem;
+}
+
+.roadmap-desc {
+    display: visual;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.footer-message {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #545e6f;
+    margin: 0.3rem 0.5rem;
+}
+
+.footer-contact {
+    font-size: 0.9rem;
+    color: #545e6f;
+    margin: 0 0.5rem;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: #545e6f;
+    margin: 1rem 0.5rem;
+}
+
+#backtotop {
+    background-color: rgb(47, 48, 49);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+
+    border-radius: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition-property: backgrond-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+/* 아이콘 적용 방법
+    1. ::after (요소 뒤에 content 추가) 가상 요소에서
+    2. content: "폰트어썸 유니코드"를 넣고
+    3. font-family: FontAwesome 이라고 넣으면 됨
+*/
+#backtotop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    line-height: 40px;
+    color: #fff;
+}
+
+#backtotop.show:hover {
+    cursor: pointer;
+    background-color: #2286c4;
+}
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgb(47, 48, 49);
+}
+
+/* drag 할 수 있는 아이템임을 나타내는 표시를 포인터로 변경함 */
+ul li img:hover {
+    cursor: grab; /* IE11에서는 지원 안 함 */
+}
+
+/* dragging 중인 상태에서 잡는 표시를 포인터로 변경함 */
+ul li img:active {
+    cursor: grabbing; /* IE11에서는 지원 안 함 */
+}
+
+@media only screen and (min-width: 1200px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .skill-container {
+        display: none;
+    }
+    .roadmap-desc {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .class-skill {
+        display: none;
+    }
+    .class-container {
+        padding: 0.5rem;
+    }
+    .class-desc {
+        margin-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 0.8rem;
+    }
+    .message {
+        font-size: 1.4rem;
+        font-weight: normal;
+        color: #fff;
+        line-height: 2rem;
+    }
+    .class-skill {
+        display: none;
+    }
+    .class-container {
+        padding: 0.5rem;
+    }
+    .class-dexc {
+        margin-top: 0.3rem;
+    }
+}

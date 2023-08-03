@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>김철수 홈페이지</title>
+    <meta name="description" content="프론트엔드 인프런 온라인 강의 실습용 홈페이지 (출처: 잔재미코딩)" />
+    <meta name="keywords" content="Front-End, 프론트엔드, IT강의, Training" />
+    <meta name="author" content="김철수" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Open Graph (Facebook, Linkedin) -->
+    <meta property="og.type" content="website">
+    <meta property="og:title" content="프론트엔드 온라인 강의 실습용 홈페이지입니다." />
+    <meta property="og:description" content="김철수의 프론트엔드 인프런 온라인 강의 실습용 홈페이지 (출처: 잔재미코딩)" />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1678721176850554880/5J18NrVc_400x400.jpg" />
+    <meta property="og:url" content="https://www.chulsu-page.org" />
+    <meta property="og:site_name" content="김철수 홈페이지" />
+
+    <!-- twitter card (Twitter) -->
+    <meta name="twitter:card" content="summary" />
+    <!-- card 종류: summary, photo, player -->
+    <meta property="twitter:title" content="프론트엔드 온라인 강의 실습용 홈페이지입니다." />
+    <meta property="twitter:description" content="김철수의 프론트엔드 인프런 온라인 강의 실습용 홈페이지 (출처: 잔재미코딩)" />
+    <meta property="twitter:image" content="https://pbs.twimg.com/profile_images/1678721176850554880/5J18NrVc_400x400.jpg" />
+    <meta property="og:url" content="https://www.chulsu-page.org" />
+    <meta name="twitter:creator" content="김철수" />
+
+    <!-- 일반적인 fabicon 설정 -->
+    <link rel="icon" href="img/fun-icon.ico" />
+    <!-- 아이폰용 fabicon 설정 -->
+    <link rel="apple-touch-icon" href="img/fun-icon.ico" />
+    <!-- 인터넷 익스플로어 용 fabicon 설정 -->
+    <link rel="short icon" type="image/x-icon" href="img/funcoding.ico"/>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ed96b94c56.js" crossorigin="anonymous"></script>
+    <!-- Spoca Han Sans Neo -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-brand"><a href="https://www.youtube.com/watch?v=9iOj8RLAeDA">header LEFT</a></div>
+                <div class="head-blog"><a href="https://www.youtube.com/watch?v=Rd2wppggYxo">header RIGHT</a></div>
+            </div>
+        </div> 
+    </header>
+
+    <!-- 메인 이미지 섹션 -->
+    <section class="main">
+        <div class="main-container">
+            <div class="inner">
+                <div class="title-container">
+                    <!-- 크롬 개발자 모드에서 toogle device toolbar 선택 (왼쪽 상단 두 번째 메뉴)
+                    iPhone X로 선택한 후 최종 확인 후, 관련 코드 수정
+                     -->
+                    <div class="title">banner TITLE</div>
+                    <div class="message">
+                        message 1<br />
+                        message 2<br />
+                        message 3
+                        <span class="news"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <div class="skill-container">
+                <div class="skill">
+                    <i class="fa-solid fa-star skill-icon star-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">러블리즈</div>
+                        <div class="skill-usage">삼각형</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-apple-whole skill-icon apple-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">오마이걸</div>
+                        <div class="skill-usage">한 발짝 두 발짝</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-book-bible skill-icon book-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">엔믹스</div>
+                        <div class="skill-usage">Funky Glitter Christmas</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-pen skill-icon pen-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">뉴진스</div>
+                        <div class="skill-usage">OMG</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <div class="roadmap-container">
+                <div class="roadmap-title-container">
+                    <div class="roadmap-title">section TITLE</div>
+                </div>
+                <div class="arrow-container">
+                    <i class="fas fa-chevron-circle-left slide-prev"></i>
+                    <i class="fas fa-chevron-circle-right slide-next"></i>
+                </div>
+            </div>
+            <!-- HTML5에서는 data-변수이름=변수값  -->
+            <ul class="class-list" data-position="0">
+                <li class="class-card">
+                    <img src="https://i.pinimg.com/originals/f8/30/7a/f8307abec2689a7bc26e290a74c18d12.jpg" alt="러블리즈 케이" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=8FW8NjMGyPs" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">러블리즈</div>
+                                <div class="class-format">케이</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">삼각형</div>
+                                <div class="class-detail">Fall in Lovelyz</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://file3.instiz.net/data/cached_img/upload/2019/08/05/0/5f667f3b07d79844cab7ceaf6fb6debb.jpg" alt="오마이걸 아린" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=_9WgI4a0-Mk" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">오마이걸</div>
+                                <div class="class-format">아린</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">한 발짝 두 발짝</div>
+                                <div class="class-detail">PINK OCEAN</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://blog.kakaocdn.net/dn/15c1u/btrBF5rq2s1/uCDT0O1GSpm5WEu8kHzna0/img.jpg" alt="엔믹스 설윤" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=kBwikDvbRbI" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">엔믹스</div>
+                                <div class="class-format">설윤</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">Funky Glitter Christmas</div>
+                                <div class="class-detail">1st Intermixxion Single <Funky Glitter Christmas></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://image.board.sbs.co.kr/2022/08/25/Es21661416873787-600.jpg" alt="뉴진스 해린" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=pSUydWEqKwE" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">뉴진스</div>
+                                <div class="class-format">해린</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">OMG</div>
+                                <div class="class-detail">The 1st Single 〈OMG〉</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://pbs.twimg.com/media/Fp6Cb_dakAARNCX?format=jpg&name=large" alt="에스파 카리나" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=Os_heh8vPfs" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">에스파</div>
+                                <div class="class-format">카리나</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">Spicy</div>
+                                <div class="class-detail">MY WORLD - The 3rd Mini Album</div>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                <li class="class-card">
+                    <img src="https://pbs.twimg.com/media/FS5D_4QakAARHTY?format=jpg&name=large" alt="아이브 장원영" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">아이브</div>
+                            <div class="class-format">장원영</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">After LIKE</div>
+                            <div class="class-detail">The 3rd Single 〈After LIKE〉</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://img2.sbs.co.kr/img/seditor/VD/2020/08/05/VD42524722_w640.jpg" alt="에이프릴 이나은" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">에이프릴</div>
+                            <div class="class-format">이나은</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Now or Never</div>
+                            <div class="class-detail">Summer Special Album ‘Hello Summer’</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <div class="roadmap-container">
+                <div class="roadmap-title-container">
+                    <div class="roadmap-title">K-여돌 레전드 홈마 사진<span class="roadmap-desc">: 그 미모의 끝은 어디인가</span></div>
+                </div>
+                <div class="arrow-container">
+                    <i class="fas fa-chevron-circle-left slide-prev"></i>
+                    <i class="fas fa-chevron-circle-right slide-next"></i>
+                </div>
+            </div>
+            <ul class="class-list" data-position="0">
+                <li class="class-card">
+                    <img src="https://i.pinimg.com/originals/f8/30/7a/f8307abec2689a7bc26e290a74c18d12.jpg" alt="러블리즈 케이" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=8FW8NjMGyPs" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">러블리즈</div>
+                                <div class="class-format">케이</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">삼각형</div>
+                                <div class="class-detail">Fall in Lovelyz</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://file3.instiz.net/data/cached_img/upload/2019/08/05/0/5f667f3b07d79844cab7ceaf6fb6debb.jpg" alt="오마이걸 아린" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=_9WgI4a0-Mk" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">오마이걸</div>
+                                <div class="class-format">아린</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">한 발짝 두 발짝</div>
+                                <div class="class-detail">PINK OCEAN</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://blog.kakaocdn.net/dn/15c1u/btrBF5rq2s1/uCDT0O1GSpm5WEu8kHzna0/img.jpg" alt="엔믹스 설윤" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=kBwikDvbRbI" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">엔믹스</div>
+                                <div class="class-format">설윤</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">Funky Glitter Christmas</div>
+                                <div class="class-detail">1st Intermixxion Single <Funky Glitter Christmas></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://image.board.sbs.co.kr/2022/08/25/Es21661416873787-600.jpg" alt="뉴진스 해린" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=pSUydWEqKwE" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">뉴진스</div>
+                                <div class="class-format">해린</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">OMG</div>
+                                <div class="class-detail">The 1st Single 〈OMG〉</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://pbs.twimg.com/media/Fp6Cb_dakAARNCX?format=jpg&name=large" alt="에스파 카리나" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=Os_heh8vPfs" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">에스파</div>
+                                <div class="class-format">카리나</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">Spicy</div>
+                                <div class="class-detail">MY WORLD - The 3rd Mini Album</div>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                <li class="class-card">
+                    <img src="https://pbs.twimg.com/media/FS5D_4QakAARHTY?format=jpg&name=large" alt="아이브 장원영" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">아이브</div>
+                            <div class="class-format">장원영</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">After LIKE</div>
+                            <div class="class-detail">The 3rd Single 〈After LIKE〉</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="class-card">
+                    <img src="https://img2.sbs.co.kr/img/seditor/VD/2020/08/05/VD42524722_w640.jpg" alt="에이프릴 이나은" class="class-image">
+                    <div class="class-container">
+                        <div class="class-skill">
+                            <div class="class-type">에이프릴</div>
+                            <div class="class-format">이나은</div>
+                        </div>
+                        <div class="class-desc">
+                            <div class="class-title">Now or Never</div>
+                            <div class="class-detail">Summer Special Album ‘Hello Summer’</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <div class="roadmap-container">
+                <div class="roadmap-title-container">
+                    <div class="roadmap-title">K-여돌 레전드 홈마 사진<span class="roadmap-desc">: 그 미모의 끝은 어디인가</span></div>
+                </div>
+                <div class="arrow-container">
+                    <i class="fas fa-chevron-circle-left slide-prev"></i>
+                    <i class="fas fa-chevron-circle-right slide-next"></i>
+                </div>
+            </div>
+            <ul class="class-list" data-position="0">
+                <li class="class-card">
+                    <img src="https://i.pinimg.com/originals/f8/30/7a/f8307abec2689a7bc26e290a74c18d12.jpg" alt="러블리즈 케이" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=8FW8NjMGyPs" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">러블리즈</div>
+                                <div class="class-format">케이</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">삼각형</div>
+                                <div class="class-detail">Fall in Lovelyz</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="class-card">
+                    <img src="https://blog.kakaocdn.net/dn/15c1u/btrBF5rq2s1/uCDT0O1GSpm5WEu8kHzna0/img.jpg" alt="엔믹스 설윤" class="class-image">
+                    <a href="https://www.youtube.com/watch?v=kBwikDvbRbI" target="_blank">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">엔믹스</div>
+                                <div class="class-format">설윤</div>
+                            </div>
+                            <div class="class-desc">
+                                <div class="class-title">Funky Glitter Christmas</div>
+                                <div class="class-detail">1st Intermixxion Single <Funky Glitter Christmas></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="footer-message">이 홈페이지는 김철수의 프론트엔드 실습 결과물로, 사용한 사진은 저작권자의 허락을 받지 않았습니다.</div>
+            <div class="footer-contact">연락처: 010-1234-5678</div>
+            <div class="footer-copyright">Copyright 2023 ⓒ All rights not reserved.</div>
+        </div>
+    </footer>
+    <a id="backtotop" class="show"></a>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script type="text/bable" src="js/main.js"></script>
+    <script type="text/bable" src="js/comm.js"></script>
+</body>
+</html>
